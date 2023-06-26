@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(90deg, #0644BF, #47E3FF);
+}
+
+.social-media {
+    display: flex;
+    align-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+.social-media a:first-child img {
+    margin-left: 0;
+}
+
+.alternative span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.alternative span::before, .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgb(0, 0, 0, 0.4);
+}
+
+.alternative span::after {
+    left: 50px;
+}
+
+.main-cadastro {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-cadastro-image {
+    width: 35vw;
+}
+
+.right-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cadastro {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-cadastro > h1 {
+    color: #545454;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.text-field > input {
+    width: 100%;
+    border: 1px solid #545454;
+    border-radius: 20px;
+    padding: 15px;
+    background: rgb(211, 211, 211);
+    color: #545454;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #66666656;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field > label {
+    color: #545454;
+    margin-bottom: 10px;
+}
+
+.text-field > input::placeholder {
+    color: #00000030;
+}
+
+.btn-cadastro {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    background-image: linear-gradient(130deg,#47E3FF , #0644BF);
+    border-radius: 15px;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -12px #08cbf3;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-cadastro {
+        width: 85%;
+    }
+    .right-cadastro {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-cadastro {
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        
+    }
+    .left-cadastro {
+        width: 100%;
+        height: auto;
+    }
+    .right-cadastro {
+        width: 100%;
+        height: auto;
+    }
+    .right-cadastro img{
+        display: none;
+    }
+    .card-cadastro {
+        width: 90%;
+    }
+}
+
