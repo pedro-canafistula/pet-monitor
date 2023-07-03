@@ -1,12 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;700&display=swap');
 
-body {
+
+* {
     margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-body * {
-    box-sizing: border-box;
+.social-media {
+    display: flex;
+    align-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+.social-media a:first-child img {
+    margin-left: 0;
+}
+
+.alternative span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.alternative span::before, .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgb(0, 0, 0, 0.4);
+}
+
+.alternative span::after {
+    left: 50px;
 }
 
 .main-login {
