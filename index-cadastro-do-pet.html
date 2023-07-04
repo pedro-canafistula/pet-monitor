@@ -1,0 +1,242 @@
+<html lang="pt-bt"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style-cadastro.css">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0644BF, #47E3FF);
+}
+
+.main {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.right-cadastro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #ffffff;
+}
+
+.right-cadastro img {
+    width: 31rem;
+}
+
+.left-cadastro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0644BF;
+    padding: 3rem;
+}
+
+
+.form-header {
+    margin-bottom: 3rem;
+    display: block;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #0644BF;
+    margin: auto 0;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: block;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.input-box {
+    display: block;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 10px solid #0644BF;
+}
+
+
+.gender-group {
+    display: block;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input {
+    display: block;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.cadastrese-button button {
+    width: 100%;
+    margin-top: -4rem;
+    border: none;
+    background: linear-gradient(90deg, #0644BF, #47E3FF);
+    padding: 0.6rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cadastrese-button button:hover {
+    background: linear-gradient(20deg, #0644BF, #47E3FF);
+}
+
+.cadastrese-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1330px) {
+    .right-cadastro {
+        display: none;
+    }
+
+    .main {
+        width: 50%;
+    }
+
+    .left-cadastro {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .main {
+        width: 90%;
+        height: auto;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }   
+
+    .gender-input{
+        margin-top: 0.5rem;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left-cadastro">
+            <img src="kisspng-locator-map-kingston-terms-of-service-computer-ico-5af826da1d37e3.4408522115262123141197-removebg.png" alt="localizador" height="400px">
+        </div>
+        <div class="right-cadastro">
+           
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre seu Pet</h1>
+                    </div> 
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome"></label>
+                        <input type="text" name="name" id="name" placeholder="Nome do Pet" required="">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="raca"></label>
+                        <input type="text" name="raca" id="raca" placeholder="Raça do Pet" required="">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="nome do dono"></label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome do(a) Dono(a)" required="">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco"></label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Endereço de Moradia" required="">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="nummber"></label>
+                        <input type="number" name="nummber" id="nummber" placeholder="Número do dispositivo" required="">
+                    </div>
+
+                </div>
+
+               
+                </div>
+                
+                <div class="cadastrese-button">
+                    <button><a href="#">Cadastrar</a></button>
+                </div>
+            </form>
+    </div>
+        </div>
+    </div>
+
+</body>
+</html>
