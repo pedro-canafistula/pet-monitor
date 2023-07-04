@@ -142,8 +142,8 @@
     color: #00000030;
 }
 
-.btn-login {
-    width: 100%;
+.btn-login button {
+    width:24vw;
     padding: 16px 0px;
     margin: 25px;
     border: none;
@@ -152,11 +152,14 @@
     outline: none;
     text-transform: uppercase;
     color: white;
+    cursor: pointer;
     font-weight: 800;
     letter-spacing: 2px;
-    cursor: pointer;
     box-shadow: 0px 10px 30px -12px #08cbf3;
+
 }
+
+
 
 @media only screen and (max-width: 950px) {
     .card-login {
@@ -184,6 +187,9 @@
     }
     .card-login {
         width: 90%;
+    }
+    .btn-login button{
+        width: 70vw;
     }
 }
 
