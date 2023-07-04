@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    justify-content: top;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body{
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(#0644BF, #47E3FF);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 0 20px;
+}
+
+.menu{
+    margin-right: 30px;
+}
+
+.menu a:hover{
+    background-color: #0644BF;
+}
+
+.cta h1, h2{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+.cta h2{
+    display: none;
+}
+
+.mapa{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 670px) {
+    .menu{
+        display: none;
+    }
+    .mapa {
+        width: 60vw;
+        height: 50vw;
+    }
+    .cta{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 415px){
+    .cta{
+        width: 63vw;
+       
+    }
+    .cta h2{
+        display: flex;
+    }
+    .cta h1{
+        display: none;
+    }
+    .mapa{
+        width: 80vw;
+        height: 55vh;
+    }
+}
